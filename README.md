@@ -24,6 +24,16 @@ This repository is the official PyTorch implementation of "MoCHA-former: Moiré-
 
 ![our main framework](./assets/MoCHA-former-main.png)
 
+## 🌏 Content
+- [📧 News](#-news)
+- [📝 TODO](#-todo)
+- [📚 Version Info](#-version-info)
+- [⚙️ Environment Setting](#️-environment-setting)
+- [📁 Prepare Dataset](#-prepare-dataset)
+- [🚀 Get Started](#-get-started)
+- [✨ Results](#-results)
+- [📖 Bibtex](#-bibtex)
+
 ## 📧 News
 * **on Dec 26, 2025**: Full code published
 * **on Dec 26, 2025**: Published in **Neurocomputing** with open access
@@ -89,19 +99,34 @@ conda activate RRID
 ### Training
 * We adopt a two-stage training strategy in the proposed MoCHA-former.
 
-* **stage 1** training
+* **stage 1**: training on RAW data
 ```
 PYTHONPATH="./:${PYTHONPATH}" CUDA_VISIBLE_DEVICES=0 python train.py -opt options/train/MoCHA-former_stg1.yml
 ```
-* **stage 2** training
+* **stage 2**: training on RAW data
 ```
 PYTHONPATH="./:${PYTHONPATH}" CUDA_VISIBLE_DEVICES=0 python train.py -opt options/train/MoCHA-former_stg2.yml
 ```
 
+* **stage 1**: training on sRGB data
+```
+PYTHONPATH="./:${PYTHONPATH}" CUDA_VISIBLE_DEVICES=0 python train.py -opt options/train/MoCHA-former_rgb_stg1.yml
+```
+* **stage 2**: training on sRGB data
+```
+PYTHONPATH="./:${PYTHONPATH}" CUDA_VISIBLE_DEVICES=0 python train.py -opt options/train/MoCHA-former_rgb_stg2.yml
+```
+
 ### Testing
 
+* testing on RAW data
 ```
-PYTHONPATH="./:${PYTHONPATH}" CUDA_VISIBLE_DEVICES=0 python test.py -opt options/test/demoire_ai_01.yml
+PYTHONPATH="./:${PYTHONPATH}" CUDA_VISIBLE_DEVICES=0 python test.py -opt options/test/MoCHA-former_stg2.yml
+```
+
+* testing on sRGB data
+```
+PYTHONPATH="./:${PYTHONPATH}" CUDA_VISIBLE_DEVICES=0 python test.py -opt options/test/MoCHA-former_rgb_stg2.yml
 ```
 
 ### Get Qualitative & Quantitative Result
