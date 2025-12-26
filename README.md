@@ -30,8 +30,9 @@ This repository is the official PyTorch implementation of "MoCHA-former: Moiré-
 * **on Aug 24, 2025**: This repository is created
 
 ## 📝 TODO
-- [ ] checkpoint upload
-- [ ] modifying main framework figure to final version of our paper
+- [x] checkpoint upload
+- [x] full code upload
+- [x] modifying main framework figure to final version of our paper
 
 
 ## 📚 Version Info
