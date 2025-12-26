@@ -137,3 +137,16 @@ Please visit our [project page](https://cmlab-korea.github.io/MoCHA-former/) and
     <img src="https://img.youtube.com/vi/t01uFUSa-uI/maxresdefault.jpg" alt="Demo Video" style="width:75%;">
   </a>
 </div>
+
+## 📖 Bibtex
+
+```bibtex
+@article{sung2025mocha,
+  title={MoCHA-former: Moir{\'e}-conditioned hybrid adaptive transformer for video demoir{\'e}ing},
+  author={Sung, Jeahun and Roh, Changhyun and Eom, Chanho and Oh, Jihyong},
+  journal={Neurocomputing},
+  pages={132477},
+  year={2025},
+  publisher={Elsevier}
+}
+```
