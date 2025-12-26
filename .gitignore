@@ -1,0 +1,12 @@
+*.pyc
+.DS_Store
+*.png
+*.log
+*.json
+*.wandb
+*.txt
+
+wandb/
+results/
+
+!assets/MoCHA-former-main.png
